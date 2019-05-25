@@ -1,0 +1,17 @@
+{
+  "name": "phone-api",
+  "version": "1.0.0",
+  "description": "Phone catalogue API",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Juan Astorga",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
