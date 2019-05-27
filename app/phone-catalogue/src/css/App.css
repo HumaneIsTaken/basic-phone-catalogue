@@ -1,5 +1,14 @@
-.App {
+.app {
   text-align: center;
+}
+
+.header {
+  background-color: #454545;
+  border: solid gray;
+  border-width: 0px 0px 1px 0px;
+  color: white;
+  text-align: left;
+  padding: 10px;
 }
 
 /* .App-logo {

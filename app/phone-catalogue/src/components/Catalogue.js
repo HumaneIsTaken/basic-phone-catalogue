@@ -1,26 +1,40 @@
-import React, { useState } from 'react';
-import { connect } from "react-redux";
-import '../css/Catalogue.css';
+import React, { useEffect } from 'react';
+import { bindActionCreators } from 'redux';
+import '../css/catalogue.css';
+import { connect } from 'react-redux';
+import { fetchPhones } from '../redux/actions/PhoneActions';
+import Phone from './Phone';
 
-const mapStateToProps = state => {
-  return {
-    phones: state.phones,
-    isFetching: state.isFetching
-  }
-};
+function Catalogue(props) {
+  useEffect(() => {
+    props.onFetchPhones();
+  }, []);
 
-function Catalogue() {
+  const phones = props.phones.map((phone) => 
+    <li key={phone.id} className="phone-li">
+      <Phone phone={phone} />
+    </li>
+  );
 
-  const [phones, setPhones] = useState([]);
-  const [isFetching, setIsFetching] = useState(false);
-
-  connect(mapStateToProps)(Catalogue);
+  // TODO: Add spinning loading log instead of Loading.
   return (
-    <div className="Catalogue">
-      <h1>Phone catalogue</h1>
-      <p>{phones}</p>
+    <div className="catalogue">
+      <div className="phone-container">
+        {props.isFetching ? 
+          <h3> Loading... </h3> :
+          <ul className="phone-ul">{phones}</ul>} 
+      </div>      
     </div>
   );
 }
 
-export default Catalogue;
+const mapStateToProps = state => ({
+  phones: state.phones,
+  isFetching: state.isFetching
+});
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  onFetchPhones: fetchPhones
+}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Catalogue);

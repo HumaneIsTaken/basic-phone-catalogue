@@ -19,7 +19,7 @@ export function fetchPhones() {
         dispatch(requestPhones());
         return axios.get(apiURL)
             .then(function (response) {
-                dispatch(receivePhones(response.data))
+                dispatch(receivePhones(response.data));
             })
             .catch(function (err) {
                 console.log(err);
