@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { bindActionCreators } from 'redux';
-import '../css/catalogue.css';
 import { connect } from 'react-redux';
 import { fetchPhones } from '../redux/actions/PhoneActions';
 import Phone from './Phone';
+import '../css/catalogue.css';
+import reactLogo from '../logo.svg';
 
 function Catalogue(props) {
   useEffect(() => {
@@ -16,12 +17,18 @@ function Catalogue(props) {
     </li>
   );
 
+  const loadingJSX = 
+    <div className="loading-flex">
+      <img className="app-logo" src={ reactLogo } />
+      <h3>LOADING</h3>
+    </div>
+
   // TODO: Add spinning loading log instead of Loading.
   return (
     <div className="catalogue">
       <div className="phone-container">
         {props.isFetching ? 
-          <h3> Loading... </h3> :
+          loadingJSX :
           <ul className="phone-ul">{phones}</ul>} 
       </div>      
     </div>
