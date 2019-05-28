@@ -21,14 +21,14 @@ $ npm install
 $ node server.js
 Phone Catalogue API server up on port 3001
 ```
-We install dependencies and run the API with **node server.js**.
+We install dependencies and run the API with **node server.js**. This will host the API on http:/localhost:3001
 
 With that running, we now start the React application. Go to the **/app/phone-catalogue** folder and run the following.
 ```
 $ npm install
 $ npm start
 ```
-We (again) install the required dependencies and run the app with **npm start**
+We (again) install the required dependencies and run the app with **npm start**. This will host it on http:/localhost:3000
 
 If you wish to run the test suite for the React Application, run **npm test**
 ```
