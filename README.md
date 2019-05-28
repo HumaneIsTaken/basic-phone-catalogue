@@ -1,6 +1,8 @@
 # Front-end Challenge - Phone Catalogue
 
-Code for the Front-end Challenge. The api folder contains all the code necessary to run the node.js Phones API, whilst the app/phone-catalogue folder contains everything to get the React App going.
+Code for the Front-end Challenge.
+
+The api folder contains all the code necessary to run the node.js Phones API, whilst the app/phone-catalogue folder contains everything to get the React App going.
 
 ## Solution Notes
 The following elements have been implemented in this solution
@@ -28,7 +30,7 @@ $ npm start
 ```
 We (again) install the required dependencies and run the app with **npm start**
 
-If you wish to run the test suite, run **npm test**
+If you wish to run the test suite for the React Application, run **npm test**
 ```
 $ npm test
 ```
