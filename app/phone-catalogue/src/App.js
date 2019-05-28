@@ -2,7 +2,7 @@ import React from 'react';
 import Catalogue from './components/Catalogue';
 import './css/app.css';
 
-function App() {
+export function App() {
   return (
     <div className="app">
       <header className="header">

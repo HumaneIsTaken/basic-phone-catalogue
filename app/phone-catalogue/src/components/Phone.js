@@ -20,9 +20,9 @@ function Phone(props) {
            alt = {props.phone.name}
       /> 
       <div className="phone-info">
-        <p className="phone-maker">{phone.manufacturer}</p>
-        <p className="phone-name">{phone.name}</p>
-        <p className="phone-price">${phone.price}</p>    
+        <p data-test="maker" className="phone-maker">{phone.manufacturer}</p>
+        <p data-test="name" className="phone-name">{phone.name}</p>
+        <p data-test="price" className="phone-price">${phone.price}</p>    
       </div>
     </div>
 
@@ -35,12 +35,12 @@ function Phone(props) {
             <p className="phone-detail-name">{phone.name}</p>
           </div>
           <div className="phone-detail-spec">
-            <p className="phone-detail-screen">{phone.screen} screen</p>
-            <p className="phone-detail-cpu">{phone.processor} processor</p>
-            <p className="phone-detail-ram">{phone.ram}GB RAM</p>
+            <p data-test="screen" className="phone-detail-screen">{phone.screen} screen</p>
+            <p data-test="processor" className="phone-detail-cpu">{phone.processor} processor</p>
+            <p data-test="ram" className="phone-detail-ram">{phone.ram}GB RAM</p>
           </div>
         </div>
-        <p className="phone-detail-desc">{phone.description}</p>
+        <p data-test="desc" className="phone-detail-desc">{phone.description}</p>
         <div className="phone-detail-footer">
           <p className="phone-detail-price">${phone.price}</p>
           <div className="phone-detail-color">
