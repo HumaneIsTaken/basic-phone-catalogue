@@ -9,7 +9,7 @@ import reactLogo from '../logo.svg';
 export function Catalogue(props) {
   useEffect(() => {
     props.onFetchPhones();
-  }, []);
+  }, []); // Empty array to prevent infinite re-renders
 
   let phones = props.phones.map((phone) => 
     <li key={phone.id} className="phone-li">
@@ -19,7 +19,7 @@ export function Catalogue(props) {
 
   const loadingJSX = 
     <div data-test="loading" className="loading-flex">
-      <img className="app-logo" src={ reactLogo } />
+      <img className="app-logo" src={ reactLogo } alt="logo"/>
       <h3>LOADING</h3>
     </div>
 
