@@ -1,15 +1,8 @@
-# Front-end Challenge - Phone Catalogue
+# Basic Phone Catalogue
 
-Code for the Front-end Challenge.
+This is a very basic phone catalogue that pulls data from an API with one endpoint (/phones).
 
 The api folder contains all the code necessary to run the node.js Phones API, whilst the app/phone-catalogue folder contains everything to get the React App going.
-
-## Solution Notes
-The following elements have been implemented in this solution
-- Node.js back-end which services the phones.json payload (via /phones) and images (public/images/).
-- New images have been provided, to have images with similar dimensions. (Easier styling)
-- React application that displays phones from the API or a loading logo.
-- The front-end application has a small test-suite that checks components at a unit level.
 
 ## Setup and Usage
 This solution can be set up one of two ways. Locally or via **Docker**.
