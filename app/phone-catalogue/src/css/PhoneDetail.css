@@ -1,0 +1,90 @@
+.phone-detail {
+  background-color: white;
+  overflow: hidden;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: all 0.8s;
+  border-top: 1px solid gray;
+}
+
+.phone-detail-container {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 15px;
+}
+
+.detail-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.detail-maker {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.detail-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.detail-specs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-end;
+  font-size: 0.7em;
+  padding-left: 10px;
+  margin-left: auto;
+  border-left: 1px solid #d5d5d5;
+}
+
+.detail-desc {
+  font-size: 0.8em;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 5px 15px;
+}
+
+.detail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0px;
+  width: 100%;
+}
+
+.detail-price {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.detail-color {
+  padding: 0px 5px;
+  color: #4a4a4a;
+  display: flex;
+}
+
+.circle-color {
+  margin: 0px 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #1b1b1b;
+}
+
+/* Circle colors */
+.circle-color.p-black { background-color: #424242 }
+.circle-color.p-blue { background-color: #5959ff }
+.circle-color.p-white { background-color: white }
+.circle-color.p-grey { background-color: #cbcbcb }

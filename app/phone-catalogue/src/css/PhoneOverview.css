@@ -1,0 +1,41 @@
+.phone-overview {
+  background-color: white;
+  overflow: hidden;
+  transform: rotateY(0deg);
+}
+
+.dark-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.overview-image {
+  width: 100%;
+  min-height: inherit;
+  padding: 20px 0px;
+}
+
+.overview-info {
+  padding-bottom: 15px;
+}
+
+.overview-maker {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.overview-name {
+  text-align: center;
+  margin: 0;
+}
+
+.overview-price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
