@@ -1,6 +1,6 @@
 import React from 'react';
 import Catalogue from './components/Catalogue';
-import './css/app.css';
+import './css/App.css';
 
 export function App() {
   return (

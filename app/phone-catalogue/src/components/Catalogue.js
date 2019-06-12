@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { fetchPhones } from '../redux/actions/PhoneActions';
 import Phone from './Phone';
-import '../css/catalogue.css';
+import '../css/Catalogue.css';
 import reactLogo from '../logo.svg';
 
 export function Catalogue(props) {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/phone.css';
+import '../css/Phone.css';
 
 const imageURL = 'http://localhost:3001/images/';
 
