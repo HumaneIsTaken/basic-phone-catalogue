@@ -26,24 +26,11 @@ describe('Phone Component', () => {
     phone: iPhone
   }
 
-  it('renders all phone info appropriately', () => {
-    const wrapper = shallow(<Phone {...props}/>);
-    
-    expect(wrapper.find('[data-test="name"]').text()).toBe(iPhone.name);
-    expect(wrapper.find('[data-test="maker"]').text()).toBe(iPhone.manufacturer);
-    expect(wrapper.find('[data-test="desc"]').text()).toBe(iPhone.description);
-    expect(wrapper.exists(`.circle-color.p-${iPhone.color}`)).toBe(true);
-    expect(wrapper.find('[data-test="price"]').text()).toBe(`$${iPhone.price}`);
-    expect(wrapper.find('[data-test="screen"]').text()).toBe(`${iPhone.screen} screen`);   
-    expect(wrapper.find('[data-test="processor"]').text()).toBe(`${iPhone.processor} processor`);   
-    expect(wrapper.find('[data-test="ram"]').text()).toBe(`${iPhone.ram}GB RAM`);   
-  });
-
   it('switches classes to show detail on .phone-card click', () => {
     const wrapper = shallow(<Phone {...props}/>);
-    expect(wrapper.exists('.phone-card.show-detail')).toBe(false);
-    wrapper.find('.phone-card').prop('onClick')();
-    expect(wrapper.exists('.phone-card.show-detail')).toBe(true);
+    expect(wrapper.exists('.phone.show-detail')).toBe(false);
+    wrapper.find('.phone').prop('onClick')();
+    expect(wrapper.exists('.phone.show-detail')).toBe(true);
   });
 
 });
