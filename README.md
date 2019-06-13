@@ -42,7 +42,7 @@ $ docker run --name jastor-phones-api -p 3001:3001 -d jastor7/docker-test:phones
 ```
 This will setup the container (named jastor-phones-api) and make it reachable via http://localhost:3001.
 
-**_NOTE: It is important to make sure that the API is reachable via port 3001, as I was a fool and hard-coded the port. The react app will make HTTP requests to that port. Obviously, you would never do this in prod, but for the sake of the demo here it is._**
+**_NOTE: It is important to make sure that the API is reachable via port 3001. In the future, the port will not be hardcoded._**
 
 Likewise, to setup and run a container for the phones-app, run the following.
 ```
