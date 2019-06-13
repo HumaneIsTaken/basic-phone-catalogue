@@ -23,11 +23,11 @@ $ npm start
 ```
 We (again) install the required dependencies and run the app with **npm start**. This will host it on http:/localhost:3000
 
-If you wish to run the test suite for the React Application, run **npm test**
+If you wish to run the test suite for the React Application, run **npm test** 
 ```
 $ npm test
 ```
-Jest will start up and go through the provided tests.
+Jest will start up and go through the provided tests. NOTE - Test coverage has been reduced in latest commit.
 
 ### Docker Setup
 To setup this solution via docker, we are interested in the following images.
